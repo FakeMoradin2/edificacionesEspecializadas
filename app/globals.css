@@ -47,3 +47,53 @@ body {
     animation-duration: 95s;
   }
 }
+
+/* Carrusel de galería portafolio: desplazamiento continuo; se detiene al hover */
+@keyframes portfolio-gallery-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.portfolio-gallery-marquee-wrap {
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 6%,
+    black 94%,
+    transparent
+  );
+}
+
+.portfolio-gallery-marquee-wrap:hover .portfolio-gallery-marquee-track {
+  animation-play-state: paused;
+}
+
+.portfolio-gallery-marquee-track {
+  display: inline-flex;
+  width: max-content;
+  flex-shrink: 0;
+  gap: 0.75rem;
+  will-change: transform;
+  backface-visibility: hidden;
+  animation: portfolio-gallery-marquee 110s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portfolio-gallery-marquee-wrap {
+    mask-image: none;
+  }
+
+  .portfolio-gallery-marquee-track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

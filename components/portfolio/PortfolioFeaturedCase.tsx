@@ -15,13 +15,13 @@ export function PortfolioFeaturedCase() {
           <div className="relative aspect-[4/3] w-full overflow-hidden bg-black/30 sm:aspect-[16/10] lg:aspect-auto lg:min-h-[320px]">
             <Image
               src="/hero.jpeg"
-              alt="Proyecto corporativo Scotiabank"
+              alt="Imagen de obra destacada"
               fill
               className="object-cover object-center"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
             <div className="absolute bottom-4 right-4 bg-white px-5 py-4 text-[#0A192F] shadow-lg">
-              <p className="text-3xl font-bold leading-none tabular-nums">2004</p>
+              <p className="text-3xl font-bold leading-none tabular-nums">2009</p>
               <p className="mt-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-[#64748B]">
                 Año de ejecución
               </p>
@@ -30,28 +30,53 @@ export function PortfolioFeaturedCase() {
 
           <div>
             <h2 id="portfolio-featured-heading" className="text-2xl font-bold sm:text-3xl">
-              Adecuación corporativa Scotiabank
+              Taller de Arquitectura — ITESM
             </h2>
+            <p className="mt-4 leading-relaxed text-white/88 sm:text-[1.02rem]">
+              Construcción del Taller de Arquitectura para el Instituto Tecnológico y de
+              Estudios Superiores de Monterrey, desarrollado como parte de los proyectos
+              institucionales realizados para el campus. La obra corresponde a un espacio
+              académico especializado, diseñado para actividades de enseñanza, trabajo
+              colaborativo y desarrollo de proyectos arquitectónicos.
+            </p>
             <dl className="mt-8 space-y-5 text-sm sm:text-base">
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
+                  Proyecto
+                </dt>
+                <dd className="mt-1 font-medium">Taller de Arquitectura</dd>
+              </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
                   Cliente
                 </dt>
-                <dd className="mt-1 font-medium">Scotiabank Inverlat</dd>
+                <dd className="mt-1 font-medium">ITESM</dd>
               </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
-                  Ubicación
+                  Año
                 </dt>
-                <dd className="mt-1 font-medium">Guadalajara, Jalisco</dd>
+                <dd className="mt-1 font-medium">2009</dd>
+              </div>
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
+                  Tipo
+                </dt>
+                <dd className="mt-1 font-medium">Proyecto institucional / educativo</dd>
+              </div>
+              <div>
+                <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
+                  Superficie
+                </dt>
+                <dd className="mt-1 font-medium">650 m²</dd>
               </div>
               <div>
                 <dt className="text-[11px] font-semibold uppercase tracking-wider text-white/55">
                   Alcance del proyecto
                 </dt>
                 <dd className="mt-2 leading-relaxed text-white/88">
-                  Cambio de imagen y adecuación integral de espacios bancarios con
-                  cumplimiento de estándares corporativos y normativa aplicable.
+                  Construcción de espacio académico especializado para actividades de
+                  arquitectura y desarrollo de proyectos.
                 </dd>
               </div>
             </dl>
@@ -59,7 +84,9 @@ export function PortfolioFeaturedCase() {
               <span className="mt-0.5 text-base not-italic text-emerald-400" aria-hidden>
                 ✓
               </span>
-              Implementación exitosa de imagen institucional.
+              También aparece en el listado de obras del ITESM dentro del periodo
+              2006-2011, junto con remodelaciones, adecuaciones, laboratorios e
+              infraestructura educativa.
             </p>
           </div>
         </div>
