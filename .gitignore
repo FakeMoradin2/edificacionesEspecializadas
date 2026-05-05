@@ -2,6 +2,7 @@
 
 # dependencies
 /node_modules
+node_modules/.cache
 /.pnp
 .pnp.*
 .yarn/*
@@ -16,6 +17,10 @@
 # next.js
 /.next/
 /out/
+
+# Caché de desarrollo (nunca commitear; p. ej. copia errónea de tmp en el proyecto)
+/var/
+**/.turbo
 
 # production
 /build
