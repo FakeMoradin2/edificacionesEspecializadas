@@ -1,8 +1,9 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { herraduraMarkImageCandidates } from "@/data/clients";
 
-/** SVG primero: evita ráfagas de 404 en desarrollo cuando no hay raster. */
+/** Orden de extensión para logos en `/public/logos/{id}.*`. */
 const EXT_ORDER = ["svg", "png", "jpg", "jpeg", "webp"] as const;
 
 type Props = {
@@ -27,10 +28,12 @@ export function ClientLogoMark({
   caption,
   layout = "marquee",
 }: Props) {
-  const candidates = useMemo(
-    () => EXT_ORDER.map((ext) => `/logos/${id}.${ext}`),
-    [id],
-  );
+  const candidates = useMemo(() => {
+    if (id === "herradura") {
+      return [...herraduraMarkImageCandidates];
+    }
+    return EXT_ORDER.map((ext) => `/logos/${id}.${ext}`);
+  }, [id]);
   const [attempt, setAttempt] = useState(0);
   const src = candidates[attempt];
   const exhausted = attempt >= candidates.length;
@@ -45,15 +48,23 @@ export function ClientLogoMark({
     ? "block min-h-[2.75rem] w-full px-0.5 text-center text-[9px] font-medium leading-snug text-neutral-500 line-clamp-3 sm:min-h-[2.5rem] sm:text-[10px]"
     : "max-w-[13rem] text-center text-[9px] font-medium leading-tight text-neutral-500 sm:text-[10px]";
 
-  const captionBlock = <span className={captionClass}>{caption}</span>;
+  const captionBlock =
+    caption.trim() !== "" ? (
+      <span className={captionClass}>{caption}</span>
+    ) : null;
 
   const logoBoxClass = isGrid
     ? "flex h-[52px] min-h-[52px] w-full items-center justify-center px-1 sm:h-[56px] sm:min-h-[56px]"
     : "flex h-14 w-full items-center justify-center";
 
-  const imgClass = isGrid
-    ? "max-h-full max-w-full object-contain object-center"
-    : "max-h-14 w-auto max-w-[12rem] object-contain object-center";
+  const imgClass =
+    id === "herradura"
+      ? isGrid
+        ? "max-h-[48px] w-auto max-w-[min(100%,9.5rem)] object-contain object-center sm:max-h-[52px] sm:max-w-[10.5rem]"
+        : "h-10 w-auto max-h-12 max-w-[min(13.5rem,88vw)] object-contain object-center sm:h-[3.25rem] sm:max-w-[14rem]"
+      : isGrid
+        ? "max-h-full max-w-full object-contain object-center"
+        : "max-h-14 w-auto max-w-[12rem] object-contain object-center";
 
   if (exhausted) {
     if (!isGrid) {
@@ -65,9 +76,7 @@ export function ClientLogoMark({
           >
             {label}
           </span>
-          <span className="max-w-[13rem] text-center text-[9px] font-medium leading-tight text-neutral-500 sm:text-[10px]">
-            {caption}
-          </span>
+          {captionBlock}
         </div>
       );
     }
@@ -104,3 +113,4 @@ export function ClientLogoMark({
     </figure>
   );
 }
+

@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "next dev --turbopack",
+    "dev:webpack": "next dev --webpack",
+    "dev:turbo": "next dev --turbopack",
+    "clean": "rm -rf .next node_modules/.cache && node -e \"try{require('fs').rmSync(require('path').join(require('os').tmpdir(),'edificaciones-especializadas-next-dev'),{recursive:true,force:true})}catch(e){}\"",
+    "build": "next build --webpack",
     "start": "next start",
     "lint": "eslint"
   },

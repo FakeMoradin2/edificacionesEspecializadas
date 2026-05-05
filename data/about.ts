@@ -9,7 +9,7 @@ export const founderParagraphs: string[] = [
 
 export const founderStats = [
   { value: "+40", label: "Años de experiencia" },
-  { value: "+2000", label: "Obras entregadas" },
+  { value: "+1500", label: "Obras entregadas" },
   { value: "100%", label: "Cumplimiento" },
   { value: "Top", label: "Institucional" },
 ] as const;
@@ -22,10 +22,10 @@ export type FeaturedProjectItem = {
 
 export const featuredProjects: FeaturedProjectItem[] = [
   {
-    category: "Residencial",
-    title: "Residencia La Gavia",
+    category: "Salud / Institucional",
+    title: "Hospitales IMSS",
     description:
-      "Proyecto residencial de alto nivel con acabados finos y coordinación integral de especialidades en tiempo y forma.",
+      "Intervenciones en instalaciones de salud con énfasis en normativa, flujos clínicos y disponibilidad de servicios.",
   },
   {
     category: "Bancario / Corporativo",
@@ -46,10 +46,10 @@ export const featuredProjects: FeaturedProjectItem[] = [
       "Infraestructura y remodelaciones en campus para aulas, laboratorios y áreas de convivencia estudiantil.",
   },
   {
-    category: "Salud / Institucional",
-    title: "Hospitales IMSS",
+    category: "Residencial",
+    title: "Residencia La Gavia",
     description:
-      "Intervenciones en instalaciones de salud con énfasis en normativa, flujos clínicos y disponibilidad de servicios.",
+      "Proyecto residencial de alto nivel con acabados finos y coordinación integral de especialidades en tiempo y forma.",
   },
   {
     category: "Residencial",

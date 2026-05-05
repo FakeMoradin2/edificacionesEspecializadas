@@ -1,4 +1,4 @@
-import { clientBrands } from "@/data/clients";
+import { homeMarqueeBrands } from "@/data/clients";
 import { ClientLogoMark } from "@/components/ClientLogoMark";
 
 function BrandList({ ariaHidden }: { ariaHidden?: boolean }) {
@@ -8,7 +8,7 @@ function BrandList({ ariaHidden }: { ariaHidden?: boolean }) {
       role="list"
       aria-hidden={ariaHidden ? true : undefined}
     >
-      {clientBrands.map((c) => (
+      {homeMarqueeBrands.map((c) => (
         <li
           key={`${c.id}-${ariaHidden ? "dup" : "main"}`}
           className="shrink-0"

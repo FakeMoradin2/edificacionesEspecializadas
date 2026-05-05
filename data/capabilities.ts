@@ -49,16 +49,9 @@ export const capabilities: Capability[] = [
   },
   {
     code: "07",
-    category: "VISIÓN",
+    category: "DISEÑO",
     title: "Diseño Arquitectónico",
     description:
       "Conceptualización de espacios funcionales y estéticos.",
-  },
-  {
-    code: "08",
-    category: "MANTENIMIENTO",
-    title: "Impermeabilización y Mantenimiento",
-    description:
-      "Preservación especializada de activos inmobiliarios.",
   },
 ];

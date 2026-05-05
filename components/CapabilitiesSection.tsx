@@ -47,6 +47,9 @@ export function CapabilitiesSection() {
               </p>
             </article>
           ))}
+          {/* Relleno blanco: con gap-px + fondo gris, una celda vacía en la última fila se veía gris */}
+          <div className="hidden bg-white sm:block lg:hidden" aria-hidden />
+          <div className="hidden bg-white lg:block" aria-hidden />
         </div>
       </div>
     </section>

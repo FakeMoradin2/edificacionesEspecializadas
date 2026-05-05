@@ -1,13 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 48" role="img" aria-hidden="true">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 36" role="img" aria-labelledby="th-title">
+  <title id="th-title">Tequila Herradura</title>
   <text
-    x="150"
-    y="31"
+    x="190"
+    y="24"
     text-anchor="middle"
-    font-family="Georgia, 'Times New Roman', serif"
-    font-size="13"
+    font-family="Georgia, 'Times New Roman', Times, serif"
+    font-size="18"
     font-weight="700"
-    letter-spacing="0.12em"
-    fill="#525252"
+    letter-spacing="0.14em"
+    fill="#262626"
   >
     TEQUILA HERRADURA
   </text>

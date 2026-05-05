@@ -26,7 +26,7 @@ export function AboutFeaturedProjects() {
                 <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#9CA3AF]">
                   {p.category}
                 </p>
-                <h3 className="mt-2 text-lg font-bold text-[#0A192F]">{p.title}</h3>
+                <h3 className="mt-3 text-lg font-bold text-[#0A192F]">{p.title}</h3>
                 <p className="mt-3 flex-1 text-sm leading-relaxed text-[#6B7280]">
                   {p.description}
                 </p>

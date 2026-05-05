@@ -78,24 +78,27 @@ export function Navbar() {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-gray-200/80 bg-[#F9FAFB]">
-      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between gap-4 px-4 sm:h-16 sm:px-6 lg:px-8">
+      <div className="relative mx-auto flex h-14 max-w-7xl items-center justify-between gap-2 px-4 sm:h-16 sm:gap-4 sm:px-6 lg:px-8">
         <Link
           href="/"
-          className="flex min-w-0 shrink items-center gap-2 transition-opacity hover:opacity-90"
+          className="flex min-w-0 flex-1 items-center gap-2 transition-opacity hover:opacity-90 sm:gap-2.5 md:flex-initial md:gap-3"
           onClick={() => setMenuOpen(false)}
         >
           <Image
             src="/logo.png"
-            alt="Edificación Especializada"
+            alt=""
             width={220}
             height={48}
-            className="h-8 w-auto max-w-[min(100%,11rem)] object-contain object-left sm:h-9 md:h-10 md:max-w-none"
+            className="h-8 w-auto shrink-0 max-w-[min(100%,9.5rem)] object-contain object-left sm:h-9 sm:max-w-[11rem] md:h-10 md:max-w-none"
             priority
           />
+          <span className="min-w-0 max-w-[calc(100vw-8.75rem)] text-balance font-bold leading-snug tracking-tight text-[#0A192F] text-[clamp(0.7rem,2.4vw,1.25rem)] sm:max-w-[12rem] sm:leading-tight md:max-w-[15rem] lg:max-w-[18rem] xl:max-w-[22rem]">
+            Edificacion Especializada
+          </span>
         </Link>
 
         <nav
-          className="hidden flex-1 items-center justify-end gap-6 md:flex md:gap-8 lg:gap-10"
+          className="hidden shrink-0 items-center justify-end gap-6 md:flex md:gap-8 lg:gap-10"
           aria-label="Principal"
         >
           <ul className="flex items-center gap-5 lg:gap-8">

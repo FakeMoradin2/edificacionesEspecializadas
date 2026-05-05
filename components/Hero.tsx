@@ -4,7 +4,7 @@ import Link from "next/link";
 export function Hero() {
   return (
     <section
-      className="relative flex min-h-[calc(100dvh-3.5rem)] w-full overflow-hidden sm:min-h-[calc(100dvh-4rem)]"
+      className="relative flex min-h-[calc(100dvh-3.5rem-5.5rem)] w-full overflow-hidden sm:min-h-[calc(100dvh-4rem-5.5rem)]"
       aria-label="Presentación"
     >
       <Image
@@ -31,21 +31,23 @@ export function Hero() {
         aria-hidden
       />
 
-      <div className="relative z-10 flex w-full max-w-7xl flex-1 flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
+      <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <div className="max-w-2xl text-center sm:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.55),0_0_1px_rgba(0,0,0,0.8)] sm:text-sm">
             Excelencia en construcción desde 1984
           </p>
 
-          <h1 className="mt-4 text-2xl font-bold leading-tight text-white [text-shadow:0_2px_24px_rgba(0,0,0,0.5),0_4px_48px_rgba(0,0,0,0.4)] sm:mt-5 sm:text-3xl sm:leading-tight md:text-4xl md:leading-tight">
-            Construcción y remodelación respaldada por más de 40 años de
-            experiencia.
+          <h1 className="mt-4 text-3xl font-bold leading-[1.1] tracking-tight text-white [text-shadow:0_2px_28px_rgba(0,0,0,0.55),0_6px_56px_rgba(0,0,0,0.45)] sm:mt-5 sm:text-4xl md:text-5xl md:leading-[1.08] lg:text-6xl">
+            Construcción y remodelación
           </h1>
+
+          <h2 className="mt-3 max-w-xl text-base font-semibold leading-snug text-white/90 [text-shadow:0_1px_16px_rgba(0,0,0,0.45)] sm:mt-4 sm:text-lg md:text-xl md:leading-snug lg:text-2xl">
+            Respaldada por más de 40 años de experiencia.
+          </h2>
 
           <p className="mt-4 max-w-xl text-sm font-medium leading-relaxed text-white/95 [text-shadow:0_1px_10px_rgba(0,0,0,0.55)] sm:mt-5 sm:text-base">
             Especialistas en soluciones integrales para proyectos residenciales
-            premium, entornos corporativos de alto nivel y complejos
-            institucionales de gran escala.
+            premium, entornos corporativos de alto nivel.
           </p>
 
           <div className="mt-8 flex flex-col items-stretch gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4">

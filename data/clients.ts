@@ -1,5 +1,21 @@
 /** Marcas e instituciones (tooltip + pie de foto para reconocimiento). */
 
+/**
+ * Orden de intento para la marca Tequila Herradura (ClientLogoMark, carrusel, Nosotros, etc.).
+ * Logo principal en `public/Herradura.png`; respaldos por si se renombra o falta el archivo.
+ */
+export const herraduraMarkImageCandidates = [
+  "/Herradura.png",
+  "/herradura.png",
+  "/herradura.jpg",
+  "/herradura.webp",
+  "/logos/herradura.png",
+  "/logos/herradura.jpg",
+  "/logos/herradura.jpeg",
+  "/logos/herradura.webp",
+  "/logos/herradura.svg",
+] as const;
+
 export type ClientBrand = {
   id: string;
   label: string;
@@ -26,7 +42,7 @@ export const clientBrands: ClientBrand[] = [
   },
   {
     id: "herradura",
-    label: "Tequila Herradura",
+    label: "TEQUILA HERRADURA",
     fullName: "Tequila Herradura",
     monogram: "HERR",
     caption: "Tequila Herradura",
@@ -151,3 +167,25 @@ export const clientBrands: ClientBrand[] = [
     caption: "Grupo Constructor IO",
   },
 ];
+
+/** Orden del carrusel en la página de inicio (solo estas marcas). */
+export const homeMarqueeClientIds = [
+  "itesm",
+  "scotiabank",
+  "imss",
+  "herradura",
+  "opus",
+  "promex",
+] as const;
+
+const clientBrandById = new Map(clientBrands.map((c) => [c.id, c]));
+
+export const homeMarqueeBrands: ClientBrand[] = homeMarqueeClientIds.map(
+  (id) => {
+    const brand = clientBrandById.get(id);
+    if (!brand) {
+      throw new Error(`homeMarqueeClientIds: marca no encontrada "${id}"`);
+    }
+    return brand;
+  },
+);

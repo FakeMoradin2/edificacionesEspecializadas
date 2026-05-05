@@ -5,9 +5,6 @@ import {
   founderStats,
 } from "@/data/about";
 
-const PLACEHOLDER_PORTRAIT =
-  "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=900&q=85";
-
 export function AboutFounderSection() {
   return (
     <section className="border-b border-gray-200 bg-white">
@@ -15,10 +12,10 @@ export function AboutFounderSection() {
         <div className="grid gap-10 md:grid-cols-2 md:gap-12 lg:gap-16 lg:items-start">
           <div className="relative mx-auto aspect-[4/5] w-full max-w-md min-h-[280px] overflow-hidden bg-neutral-200 sm:min-h-0 md:mx-0 md:max-w-none">
             <Image
-              src={PLACEHOLDER_PORTRAIT}
-              alt="Retrato provisional del fundador — sustituir cuando haya fotografía oficial"
+              src="/ingeniero.jpeg"
+              alt="Ing. Ezequiel Hernández Espinosa, fundador y director"
               fill
-              className="object-cover object-top grayscale"
+              className="object-cover object-top"
               sizes="(max-width: 767px) 100vw, (max-width: 1024px) 45vw, 40vw"
               priority
             />
