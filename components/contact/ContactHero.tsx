@@ -11,6 +11,7 @@ export function ContactHero() {
         alt="Espacio corporativo para reuniones de proyecto"
         fill
         priority
+        loading="eager"
         sizes="100vw"
         className="object-cover object-center brightness-[0.72] contrast-[1.05] saturate-[0.85]"
       />

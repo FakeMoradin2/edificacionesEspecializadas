@@ -11,6 +11,7 @@ export function PortfolioHero() {
         alt=""
         fill
         priority
+        loading="eager"
         sizes="100vw"
         className="object-cover object-center brightness-[0.55] blur-[2px]"
       />

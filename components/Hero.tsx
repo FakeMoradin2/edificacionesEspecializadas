@@ -12,6 +12,7 @@ export function Hero() {
         alt="Edificio moderno con fachada acristalada"
         fill
         priority
+        loading="eager"
         sizes="100vw"
         className="object-cover object-center brightness-[0.88] contrast-[1.08] saturate-[1.05]"
       />
