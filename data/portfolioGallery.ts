@@ -7,11 +7,14 @@ export type PortfolioGalleryItem = {
   alt: string;
 };
 
-const localImage = (fileName: string) => `/${encodeURI(fileName)}`;
+/** Codifica rutas locales; NFC evita desajuste NFD/NFC en algunos servidores. */
+const localImage = (fileName: string) =>
+  `/${encodeURI(fileName.normalize("NFC"))}`;
 
 export const portfolioGalleryImages: PortfolioGalleryItem[] = [
   {
-    src: localImage("baño.jpeg"),
+    /** Nombre ASCII: Vercel / `next/image` suele rechazar `baño.jpeg` en la ruta. */
+    src: "/bano.jpeg",
     alt: "Proyecto de obra - baño",
   },
   {
