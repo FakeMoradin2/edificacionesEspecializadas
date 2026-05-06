@@ -9,19 +9,19 @@ export function AboutFounderSection() {
   return (
     <section className="border-b border-gray-200 bg-white">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
-        <div className="grid gap-10 md:grid-cols-2 md:gap-12 lg:gap-16 lg:items-start">
-          <div className="relative mx-auto aspect-[4/5] w-full max-w-md min-h-[280px] overflow-hidden bg-neutral-200 sm:min-h-0 md:mx-0 md:max-w-none">
+        <div className="grid gap-10 md:grid-cols-12 md:gap-10 lg:gap-14 lg:items-start">
+          <div className="relative mx-auto aspect-[4/5] w-full max-w-[17.5rem] min-h-[220px] overflow-hidden bg-neutral-200 sm:min-h-0 md:col-span-4 md:mx-0">
             <Image
               src="/ingeniero.jpeg"
               alt="Ing. Ezequiel Hernández Espinosa, fundador y director"
               fill
               className="object-cover object-top"
-              sizes="(max-width: 767px) 100vw, (max-width: 1024px) 45vw, 40vw"
+              sizes="(max-width: 767px) 72vw, (max-width: 1024px) 30vw, 22vw"
               priority
             />
           </div>
 
-          <div className="min-w-0">
+          <div className="min-w-0 md:col-span-8">
             <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#6B7280]">
               Fundador y director
             </p>

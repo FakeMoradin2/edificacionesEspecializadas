@@ -4,8 +4,6 @@ import { useCallback, useState, type FormEvent } from "react";
 import {
   contactEmail,
   contactHoursLines,
-  contactPhoneDisplay,
-  contactPhoneTel,
   contactAddressLines,
   projectTypeOptions,
   whatsappDisplay,
@@ -15,7 +13,6 @@ import {
   IconClock,
   IconMail,
   IconMapPin,
-  IconPhone,
   IconWhatsApp,
 } from "@/components/contact/icons";
 
@@ -78,23 +75,6 @@ export function ContactLeadSection() {
                     className="mt-1 block break-all text-sm font-medium text-[#0A192F] underline-offset-4 hover:underline"
                   >
                     {contactEmail}
-                  </a>
-                </div>
-              </li>
-
-              <li className="flex gap-4">
-                <span className="mt-0.5 flex h-10 w-10 shrink-0 items-center justify-center border border-gray-200 text-[#0A192F]">
-                  <IconPhone className="h-5 w-5" />
-                </span>
-                <div className="min-w-0">
-                  <p className="text-xs font-semibold uppercase tracking-wider text-[#9CA3AF]">
-                    Teléfono
-                  </p>
-                  <a
-                    href={`tel:${contactPhoneTel}`}
-                    className="mt-1 block text-sm font-medium text-[#0A192F] underline-offset-4 hover:underline"
-                  >
-                    {contactPhoneDisplay}
                   </a>
                 </div>
               </li>

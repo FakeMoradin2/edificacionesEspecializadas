@@ -15,7 +15,7 @@ export function AboutCtaBanner() {
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-white/85 sm:text-base">
           Ponga su proyecto en manos de décadas de experiencia comprobable y
-          seriedad administrativa.
+          seriedad profesional.
         </p>
         <Link
           href="/contacto"

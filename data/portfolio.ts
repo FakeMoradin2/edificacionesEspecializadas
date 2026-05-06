@@ -7,7 +7,8 @@ export type PortfolioFilterId =
   | "corporativo"
   | "institucional"
   | "remodelaciones"
-  | "especiales";
+  | "especiales"
+  | "peritajes";
 
 export type PortfolioFilterKey = Exclude<PortfolioFilterId, "todos">;
 
@@ -32,6 +33,7 @@ export const portfolioCategoryLabels: Record<PortfolioFilterKey, string> = {
   institucional: "Institucional",
   remodelaciones: "Remodelaciones",
   especiales: "Proyectos especiales",
+  peritajes: "Peritajes",
 };
 
 export const portfolioFilterTabs: {
@@ -44,6 +46,7 @@ export const portfolioFilterTabs: {
   { id: "institucional", label: "Institucional" },
   { id: "remodelaciones", label: "Remodelaciones" },
   { id: "especiales", label: "Proyectos especiales" },
+  { id: "peritajes", label: "Peritajes" },
 ];
 
 export const portfolioProjects: PortfolioProject[] = [
@@ -675,5 +678,32 @@ export const portfolioProjects: PortfolioProject[] = [
     client: "Industrial",
     description:
       "Conjunto de naves y logística.",
+  },
+  {
+    id: "peritaje-sismos-sept-85-imss",
+    filter: "peritajes",
+    title: "Peritaje por sismos de septiembre de 1985",
+    location: "Ciudad de México",
+    client: "IMSS",
+    description:
+      "Peritaje estructural derivado de sismos de septiembre de 1985 en inmuebles institucionales.",
+  },
+  {
+    id: "peritaje-sismos-oct-95-promex",
+    filter: "peritajes",
+    title: "Peritaje por sismos de octubre de 1995",
+    location: "Ciudad de México",
+    client: "Banca Promex",
+    description:
+      "Evaluación y dictamen técnico de afectaciones por sismos de octubre de 1995 en infraestructura bancaria.",
+  },
+  {
+    id: "peritaje-hundimientos-colonia-monumental-2005",
+    filter: "peritajes",
+    title: "Peritaje por hundimientos en Colonia Monumental",
+    location: "Jalisco, México",
+    client: "Gobierno del Estado",
+    description:
+      "Peritaje técnico por hundimientos en la Colonia Monumental, realizado en mayo de 2005 para la autoridad estatal.",
   },
 ];

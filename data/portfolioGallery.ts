@@ -11,6 +11,18 @@ const localImage = (fileName: string) => `/${encodeURI(fileName)}`;
 
 export const portfolioGalleryImages: PortfolioGalleryItem[] = [
   {
+    src: localImage("baño.jpeg"),
+    alt: "Proyecto de obra - baño",
+  },
+  {
+    src: "/casa.jpeg",
+    alt: "Proyecto de obra - casa",
+  },
+  {
+    src: "/imss.jpeg",
+    alt: "Proyecto de obra - IMSS",
+  },
+  {
     src: localImage("Captura de pantalla 2026-05-04 a la(s) 11.59.28 p.m..png"),
     alt: "Proyecto de obra - captura 01",
   },
@@ -41,10 +53,6 @@ export const portfolioGalleryImages: PortfolioGalleryItem[] = [
   {
     src: localImage("Captura de pantalla 2026-05-05 a la(s) 12.01.27 a.m..png"),
     alt: "Proyecto de obra - captura 08",
-  },
-  {
-    src: localImage("Captura de pantalla 2026-05-05 a la(s) 12.01.41 a.m..png"),
-    alt: "Proyecto de obra - captura 09",
   },
   {
     src: localImage("Captura de pantalla 2026-05-05 a la(s) 12.01.59 a.m..png"),

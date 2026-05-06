@@ -35,7 +35,7 @@ export function Hero() {
       <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col justify-center px-4 py-14 sm:px-6 sm:py-16 lg:px-8 lg:py-20">
         <div className="max-w-2xl text-center sm:text-left">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-white [text-shadow:0_2px_14px_rgba(0,0,0,0.55),0_0_1px_rgba(0,0,0,0.8)] sm:text-sm">
-            Excelencia en construcción desde 1984
+            Excelencia en construcción desde 1976
           </p>
 
           <h1 className="mt-4 text-3xl font-bold leading-[1.1] tracking-tight text-white [text-shadow:0_2px_28px_rgba(0,0,0,0.55),0_6px_56px_rgba(0,0,0,0.45)] sm:mt-5 sm:text-4xl md:text-5xl md:leading-[1.08] lg:text-6xl">

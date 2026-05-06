@@ -2,10 +2,6 @@
 
 export const contactEmail = "ing.ezequielh@gmail.com";
 
-export const contactPhoneDisplay = "+52 (55) 8903 1234";
-/** Para atributo href tel (sin espacios) */
-export const contactPhoneTel = "+525589031234";
-
 /** WhatsApp Business — Jalisco (33). Formato internacional para wa.me */
 export const whatsappDisplay = "33 3167 8670";
 export const whatsappE164 = "523331678670";
@@ -20,13 +16,13 @@ export const whatsappPrefillMessage =
 export const whatsappHref = `https://wa.me/${whatsappE164}?text=${encodeURIComponent(whatsappPrefillMessage)}`;
 
 export const contactAddressLines = [
-  "Av. Paseo de la Reforma 450, Piso 22",
-  "Lomas de Chapultepec, Ciudad de México",
+  "Artemio del Valle Arizpe 4933, Col. Patria Universidad",
+  "C.P. 45119, Zapopan, Jalisco",
 ] as const;
 
 export const contactHoursLines = [
-  "Lun — Vie: 08:30 — 18:30",
-  "Sáb: 09:30 — 13:00",
+  "Lun — Vie: 09:00 — 14:00",
+  "Sáb: 09:00 — 13:00",
 ] as const;
 
 export const processSteps = [
